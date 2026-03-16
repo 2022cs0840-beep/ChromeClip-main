@@ -1,0 +1,299 @@
+/* Always show the scrollbar */
+body {
+	overflow: scroll;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat", serif;
+}
+
+@keyframes opener {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.grid {
+	display: flex;
+	width: 97vw;
+	flex-wrap: wrap;
+
+	margin: auto;
+}
+
+.img {
+	margin: 0;
+	margin-left: 10px;
+	transform: scale(1.1);
+}
+
+.sync {
+	font-weight: bold;
+
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	animation: coolor 2s infinite ease-in-out;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+.innerdiv {
+	margin-left: 12px;
+}
+
+.rainbow-text {
+	font-size: 2rem;
+	font-weight: bold;
+	animation: rgbText 2s infinite linear;
+}
+
+.title {
+	display: block;
+	padding-inline: 2px;
+	font-weight: 1000;
+	text-decoration: solid;
+	cursor: pointer;
+	font-size: 35px;
+	color: black;
+	font-family: "Doto";
+	transition: 1s background ease-in-out;
+}
+
+.title:hover {
+	background: linear-gradient(
+		90deg,
+		rgba(255, 0, 0, 1) 0%,
+		rgba(255, 154, 0, 1) 10%,
+		rgba(208, 222, 33, 1) 20%,
+		rgba(79, 220, 74, 1) 30%,
+		rgba(63, 218, 216, 1) 40%,
+		rgba(47, 201, 226, 1) 50%,
+		rgba(28, 127, 238, 1) 60%,
+		rgba(95, 21, 242, 1) 70%,
+		rgba(186, 12, 248, 1) 80%,
+		rgba(251, 7, 217, 1) 90%,
+		rgba(255, 0, 0, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: 1s background ease-in-out;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 98vw;
+	margin: 1vh auto;
+	margin-bottom: 5vh;
+}
+
+.button {
+	display: inline-block;
+	background-color: #9d0208;
+	background-color: black;
+	color: white;
+	width: 16vw;
+	padding: 8px;
+	border-radius: 25px;
+	font-size: 20px;
+	border: 2px solid white;
+	transition: 0.1s;
+	font-weight: 1000;
+	font-family: "Doto";
+}
+
+@media (max-width: 1238.4px) {
+	.button {
+		width: 170px;
+		padding: 11px;
+		font-size: 16px;
+	}
+}
+
+.button:hover {
+	background-color: white;
+	border: 2px solid #9d0208;
+	border: 2px solid black;
+	color: #9d0208;
+	color: black;
+}
+.button:active {
+	background-color: #9d0208;
+	background-color: black;
+	color: white;
+}
+
+/* Customize the scrollbar width */
+::-webkit-scrollbar {
+	width: 12px;
+	border: 3px solid white;
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+	border: 1px solid white;
+	background-color: #adb5bd;
+	border-radius: 10px;
+	border: 3px solid white;
+}
+
+/* Change the thumb color on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color: black;
+}
+
+/* Customize the scrollbar corner */
+::-webkit-scrollbar-corner {
+	background-color: #f1f1f1;
+}
+
+.errdiv {
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3px;
+	padding-inline: 10px;
+	border-radius: 20px;
+	margin-top: 30vh;
+}
+
+.err {
+	background-color: inherit;
+	border-radius: inherit;
+	font-size: 45px;
+	font-family: "Doto";
+	font-weight: 1000;
+}
+
+.statusBar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20vw;
+	height: 6vh;
+	border-radius: 5px;
+	animation: opener 0.5s ease-in-out;
+	background-color: #dee2e6;
+	text-transform: uppercase;
+
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0 0 7px black;
+	z-index: 100;
+}
+
+.statustext {
+	background-color: inherit;
+	border-radius: inherit;
+	color: black;
+	font-weight: 1000;
+	font-family: "Doto";
+	font-size: 25px;
+}
+
+.statusBar2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 36vw;
+	height: 6vh;
+	font-family: "Doto";
+	animation: opener 0.5s ease-in-out;
+	background-color: #dee2e6;
+
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0 0 7px black;
+	z-index: 100;
+}
+
+.statustext2 {
+	background-color: inherit;
+	border-radius: inherit;
+	font-weight: bold;
+	color: black;
+	font-size: 17px;
+	font-family: "Doto";
+	font-weight: 1000;
+}
+
+.statusBtn {
+	background-color: black;
+	color: white;
+	width: 5vw;
+	height: 4vh;
+	border-radius: 20px;
+	margin: 0 5px;
+	font-weight: bold;
+	font-family: "Doto";
+	border: 1px solid inherit;
+	transition: 0.3s;
+}
+
+.statusBtn:hover {
+	background-color: white;
+	color: black;
+}
+
+.statusBtn:active {
+	background-color: black;
+	color: white;
+}
+
+.routediv {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 10px auto;
+	padding-inline: 2vw;
+	margin-top: 30px;
+
+	width: max-content;
+}
+
+.routebtn {
+	font-family: "Doto";
+	font-weight: 1000;
+	font-size: 25px;
+	margin: 0 10px;
+	color: black;
+	background-color: #dee2e6;
+	width: 150px;
+	text-align: center;
+	padding: 2px;
+	border-radius: 5px;
+	transition: 0.2s ease-in-out;
+}
+
+.routebtnActive {
+	font-family: "Doto";
+	font-weight: 1000;
+	font-size: 25px;
+	margin: 0 10px;
+	color: white;
+	background-color: black;
+	width: 190px;
+	text-align: center;
+	padding: 2px;
+	border-radius: 5px;
+	transition: 0.2s ease-in-out;
+}
+
+.routebtn:hover {
+	background-color: #ced4da;
+}

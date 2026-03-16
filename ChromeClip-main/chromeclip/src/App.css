@@ -1,0 +1,145 @@
+
+@keyframes opener{
+     from{
+       opacity: 0;
+     }
+     to{
+       opacity: 1;
+     }
+}
+.card{
+  
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin:2px;
+  min-width: 200px;
+   width:23.9vw;
+   padding:1rem;
+   height:13vh;
+   min-height: 13vh;
+   background-color:#dee2e6;
+   border:2px solid inherit;
+   color:black;
+   border-radius: 20px;
+   overflow: hidden;
+text-overflow: ellipsis;
+   cursor:pointer;
+   transition: 2s;
+  
+  
+  
+
+   
+}
+
+.card2{
+  
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:2px;
+  min-width: 200px;
+   width:23.9vw;
+   padding:1rem;
+   height:13vh;
+   min-height: 13vh;
+   overflow:hidden;
+   background-color:#dee2e6;
+   border:2px solid inherit;
+   color:black;
+   border-radius: 20px;
+   transition:  0.4s;
+   cursor:pointer;
+  
+
+   
+}
+
+.card:hover{
+   height:max-content;
+   position: static;
+   z-index:10;
+   background-color: #ced4da;
+   transition: height 0.5s ease-in-out;
+}
+
+.card:active{
+  background-color:#adb5bd ;
+}
+
+
+.div{
+   display: flex;
+   justify-content: space-evenly;
+   animation: opener 0.5s ease-in-out;
+   background-color:#dee2e6;
+  
+   width:max-content;
+}
+.svg{
+  
+   animation: opener 0.5s ease-in-out;
+   transform: scale(1.2);
+   padding:1px;
+   background-color:#dee2e6;
+   margin-left: 10px;
+  
+   
+}
+
+.svg2{
+  margin-right: 10px;
+  animation: opener 0.5s ease-in-out;
+  margin: 0 1px;
+  padding: 1px;
+  transform: scale(1.2);
+  background-color:#dee2e6;
+  border-radius: 10px;
+
+}
+
+
+
+.svg:hover,.svg2:hover,.svg3:hover{
+     background-color:#adb5bd;
+     border-radius: 10px;
+}
+
+.cardcontent{
+  
+  cursor:pointer;
+  line-height:2;
+  width:20vw;
+  height:10vh;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  animation: opener 0.5s ease-in-out;
+  background-color: #dee2e6;
+
+}
+
+.cardcontent{
+  cursor:pointer;
+  line-height:1;
+  width:20vw;
+  height:max-content;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  animation: opener 0.5s ease-in-out;
+  background-color: inherit;
+
+}
+
+.contenth2{
+  font-size: 19.8px;
+  line-height:1.2;
+  font-family: "Doto";
+  font-weight:1000;
+  background-color: inherit;
+}
+
+
